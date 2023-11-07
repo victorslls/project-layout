@@ -103,7 +103,8 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../../variants'
 
 //couter
-import {Countup} from 'react-countup'
+import 
+CountUp from 'react-countup'
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -133,9 +134,16 @@ const About = () => {
             </p>
             {/**couters */}
             <div>
-              di<div>
-              <div>experience</div>
-
+              <div>
+                {/**experience */}
+              <div className='relative flex-1 after:w-[1px] 
+              after:h-full after:bg-white/10 after:absolute after:top-0 
+              after:right-0'>
+                 <div>
+                    <CountUp start={0} end={10} duration={5}/> +
+                 </div>
+                  <div>Years of experience</div>
+                 </div>
               </div>
             </div>
         </div>
