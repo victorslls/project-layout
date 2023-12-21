@@ -127,22 +127,54 @@ const About = () => {
         gap-x-6 '>
         {/**text */}
         <div className='flex-1 flex flex-col justify-center'>
-          <h2 className='h2'>Capivating <span className='text-accent'>stories</span> birth magnificent designs.</h2>
-          <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 yeas ago, I began freelacing as a developer. Since the,
-             I be done remote work for agencies, consulted for startups, 
-            and colllaborated on digital products for busines for business and consumer use.
+          <h2 className='h2'>Historias <span className='text-accent'>cativantes</span> geram designs magníficos.</h2>
+          <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Há 2 anos comecei a trabalhar com freelancer como desenvolvedor. Desde então
+             Faço trabalho remoto para agências, sou consultor para pequenas empresas,
+            e tenho coloaboração em produtos  de marketing digitais  para uso comercial e de consumo.
             </p>
             {/**couters */}
-            <div>
-              <div>
+            <div className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
+              <div className='flex flex-1 xl:gap-x-6'>
                 {/**experience */}
               <div className='relative flex-1 after:w-[1px] 
               after:h-full after:bg-white/10 after:absolute after:top-0 
               after:right-0'>
-                 <div>
-                    <CountUp start={0} end={10} duration={5}/> +
+                
+                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                    <CountUp start={0} end={2} duration={5}/> +
                  </div>
-                  <div>Years of experience</div>
+                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Ano de experiencia</div>
+                 </div>
+                 {/**clients */}
+                 <div className='relative flex-1 after:w-[1px] 
+              after:h-full after:bg-white/10 after:absolute after:top-0 
+              after:right-0'>
+                
+                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
+                    <CountUp start={0} end={250} duration={5}/> +
+                 </div>
+                  <div className=' text-xs uppercase tracking-[1px]
+                   leading-[1.4] max-w-[100px]'>Satisfação de clientes</div>
+                 </div>
+                 {/**project */}
+                 <div className='relative flex-1 after:w-[1px] 
+              after:h-full after:bg-white/10 after:absolute after:top-0 
+              after:right-0'>
+                
+                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
+                    <CountUp start={0} end={650} duration={5}/> +
+                 </div>
+                  <div className=' text-xs uppercase tracking-[1px]
+                   leading-[1.4] max-w-[100px]'>Projetos Finalizdos</div>
+                 </div>
+                 {/**awards */}
+                  <div className='relative flex-1  '>
+                
+                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
+                    <CountUp start={0} end={8} duration={5}/> +
+                 </div>
+                  <div className=' text-xs uppercase tracking-[1px]
+                   leading-[1.4] max-w-[100px]'>Premios ganhados</div>
                  </div>
               </div>
             </div>
