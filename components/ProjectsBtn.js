@@ -22,7 +22,7 @@ const ProjectsBtn = () => {
           src={'/rounded-text.png'}
           width={141}
           height={148}
-          alt="circle"s
+          alt=""
           className="animate-spin-slow w-full max-w-[141px] max-h-[148px]:"
          />
 
